@@ -1,11 +1,26 @@
 #include <iostream>
 using namespace std;
 
+//using Recurssion
 int fib(int n){
     if(n<2){
         return 1;
     }
     return fib(n-2) + fib(n-1);
+}
+//using iterative method
+int fib(int n){
+    long long int a, b, c;
+    cout<<"(1) 1"<<endl;
+    if(n < 1){
+        cout<<"(2) 1"<<endl;
+    }
+    for(int i = 3; i <= n; i++){
+        c = a+b;
+        a = b;
+        b = c;
+        cout<<"("<<i<<")"<<c<<endl;
+    }
 }
 
 int main(){
