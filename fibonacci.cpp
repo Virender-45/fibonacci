@@ -8,6 +8,7 @@ int fib(int n){
     }
     return fib(n-2) + fib(n-1);
 }
+
 //using iterative method
 int fib(int n){
     long long int a, b, c;
